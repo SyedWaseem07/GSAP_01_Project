@@ -31,8 +31,8 @@ timeLine.to("#loader",{
 })
 
 function firstPageAnimation(){
-    let tl = gsap.timeline();
-    tl.from("#nav",{
+    
+    timeLine.from("#nav",{
         y: -10,
         opacity:0,
         duration: 1.5,
@@ -155,3 +155,7 @@ document.querySelectorAll('.elem')
         
     })
 })
+document.querySelector("#minicircle").style.width = "10px"
+        document.querySelector("#minicircle").style.height = "10px"
+        document.querySelector("#minicircle").textContent = ""
+        document.querySelector("#minicircle").style.opacity = "1"
